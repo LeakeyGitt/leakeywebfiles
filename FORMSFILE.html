@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<script type="text/javascript">
+		
+		function Validateemail()
+
+		{
+			var x=document.Myform.email.value;
+			var atposition=x.indexOf("@");
+			var dotposition=x.lastindexOf(".");
+			If(atposition<1||dotposition<atposition+2||dotposition+2>x.length)
+
+			{
+				alert("please enter a valid email address in atposition:"+atposition"in dotposition:"+dotposition);
+			}
+
+		}
+
+	</script>
+
+</head>
+<body>
+	
+<form name="Myform" action="/" method=""onsubmit="return validateemail();">
+
+	<div>
+	email<input type="email" name="email" required>
+	<br>
+	<button>SUBMIT</button>
+
+	</div>
+	
+</form>
+
+</body>
+</html>
+
+
